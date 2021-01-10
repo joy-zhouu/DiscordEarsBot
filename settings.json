@@ -1,4 +1,4 @@
 {
-    "discord_token": "",
-    "wit_ai_token": ""
+    "discord_token": "your_token",
+    "wit_ai_token": "your_token"
 }
