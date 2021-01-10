@@ -183,7 +183,6 @@ const _CMD_LEAVE       = PREFIX + 'leave';
 const _CMD_DEBUG       = PREFIX + 'debug';
 const _CMD_TEST        = PREFIX + 'hello';
 const _CMD_LANG        = PREFIX + 'lang';
-const _CMD_PRESTON     = PREFIX + 'preston';
 
 const guildMap = new Map();
 
@@ -226,9 +225,6 @@ discordClient.on('message', async (msg) => {
         else if (msg.content.trim().toLowerCase() == _CMD_TEST) {
             msg.reply('hello back =)')
         }
-        else if (msg.content.trim().toLowerCase() == _CMD_PRESTON) {
-            msg.reply('watch your mouth or i will fuck your mom')
-        }
         else if (msg.content.split('\n')[0].split(' ')[0].trim().toLowerCase() == _CMD_LANG) {
             const lang = msg.content.replace(_CMD_LANG, '').trim().toLowerCase()
             listWitAIApps(data => {
@@ -255,7 +251,7 @@ function getHelpString() {
         out += '```'
         out += PREFIX + 'join\n';
         out += PREFIX + 'leave\n';
-        out += PREFIX + 'preston\n';
+        out += '```';
     return out;
 }
 
