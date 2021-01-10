@@ -227,7 +227,7 @@ discordClient.on('message', async (msg) => {
             msg.reply('hello back =)')
         }
         else if (msg.content.trim().toLowerCase() == _CMD_PRESTON) {
-            msg.reply("watch your mouth or I'll fuck your mom")
+            msg.reply('watch your mouth or i will fuck your mom')
         }
         else if (msg.content.split('\n')[0].split(' ')[0].trim().toLowerCase() == _CMD_LANG) {
             const lang = msg.content.replace(_CMD_LANG, '').trim().toLowerCase()
