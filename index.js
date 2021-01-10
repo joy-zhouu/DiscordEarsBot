@@ -255,7 +255,7 @@ function getHelpString() {
         out += '```'
         out += PREFIX + 'join\n';
         out += PREFIX + 'leave\n';
-        out += PREFIX + 'preston\n'
+        out += PREFIX + 'preston\n';
     return out;
 }
 
